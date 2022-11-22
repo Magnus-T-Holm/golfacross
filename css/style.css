@@ -1,0 +1,204 @@
+/*------------------------ Universal CSS Start ------------------------*/
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(249, 244, 238);
+}
+
+/*-------- Header --------*/
+header {
+    border-bottom: 1px solid black;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*---- Desktop ----*/
+#desktop_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 35px;
+}
+
+#desktop_header div {
+    display: flex;
+    align-items: center;
+}
+
+#desktop_header h1 {
+    font-size: 60px;
+    margin-left: 20px;
+}
+
+#desktop_header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 90px;
+    padding: 0;
+}
+
+#desktop_header li a {
+    font-size: 38px;
+    color: black;
+}
+
+/*---- Mobile ----*/
+#mobile_header {
+    display: none;
+}
+
+#mobile_header a {
+    color: black;
+}
+
+#mobile_header_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mobile_header_top h1 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
+#mobile_header_top a img {
+    height: 66px;
+    width: 66px;
+}
+
+#mobile_header_top i {
+    font-size: 37px;
+}
+
+#mobile_overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(249, 244, 238);
+    overflow-x: hidden;
+    transition: 0.2s;
+}
+
+#overlay_content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#overlay_content ul {
+    list-style: none;
+    padding: 0;
+    align-self: center;
+}
+
+#mobile_overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.2s;
+}
+
+.close_button {
+    position: absolute;
+    top: 49px;
+    right: 13px;
+    font-size: 35px;
+    color: black;
+}
+
+/* ---- Current page class | Add to the <li> in id "desktop_header" for the current page, to display a line under the menu button*/
+.current_page {
+    /* text-decoration: underline solid; */
+    border-bottom: 1px solid black;
+    /* margin: 0 140px; */
+}
+
+/*-------- Footer --------*/
+/*---- Desktop ----*/
+footer {
+    background-color: #f9f4ee;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 20px 0;
+    font-size: 32px;
+}
+
+/*------------------------ Universal CSS End ------------------------*/
+
+/*------------------------ Page specific CSS Start ------------------------*/
+
+
+/*------------------------ Page specific CSS End ------------------------*/
+
+/*------------------------ Media queries ------------------------*/
+@media screen and (max-width: 1800px) {
+    footer {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    footer {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #desktop_header nav ul {
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    #desktop_header nav ul {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #desktop_header nav a {
+        font-size: 24px;
+    }
+
+    #desktop_header h1 {
+        font-size: 50px;
+    }
+}
+
+/* Mobile & Tablet */
+@media screen and (max-width: 768px) {
+    #desktop_header {
+        display: none;
+    }
+
+    #mobile_header {
+        display: block;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 554px) {
+    footer {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
