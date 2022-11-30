@@ -5,46 +5,50 @@
 }
 
 body {
-    background-color: rgb(249, 244, 238);
+    background-color: #333333;
 }
 
 /*-------- Header --------*/
 header {
-    border-bottom: 1px solid black;
-    height: 130px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #333333;
+
 }
 
 /*---- Desktop ----*/
 #desktop_header {
+    margin: 0 130px;
+}
+
+#desktop_header nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 35px;
 }
 
-#desktop_header div {
-    display: flex;
-    align-items: center;
-}
-
-#desktop_header h1 {
-    font-size: 60px;
-    margin-left: 20px;
+#desktop_header nav img{
+    width: 90px;
 }
 
 #desktop_header nav ul {
     display: flex;
+    align-items: center;
     list-style: none;
-    gap: 90px;
+    gap: 50px;
     padding: 0;
 }
 
 #desktop_header li a {
     font-size: 38px;
     color: black;
+    font-family: Roboto, arial, sans-serif;
+}
+
+#desktop_header li a:hover {
+    border-bottom: 3px solid #445b3e;
 }
 
 /*---- Mobile ----*/
@@ -84,7 +88,7 @@ header {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgb(249, 244, 238);
+    background-color: #333333;
     overflow-x: hidden;
     transition: 0.2s;
 }
@@ -124,44 +128,34 @@ header {
 
 /* ---- Current page class | Add to the <li> in id "desktop_header" for the current page, to display a line under the menu button*/
 .current_page {
-    /* text-decoration: underline solid; */
-    border-bottom: 1px solid black;
-    /* margin: 0 140px; */
-}
-
-/*-------- Footer --------*/
-/*---- Desktop ----*/
-footer {
-    background-color: #f9f4ee;
-    border-top: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px 20px 0;
-    font-size: 32px;
+    border-bottom: 3px solid #445b3e;
 }
 
 /*------------------------ Universal CSS End ------------------------*/
 
+
 /*------------------------ Page specific CSS Start ------------------------*/
 
+
+/*-------- Stats --------*/
+#user_info {
+    display: flex;
+    justify-content: center;
+    background-color: #445b3e;
+    padding: 40px 0 52px 0;
+}
+
+#user_info #user_icon {
+    font-size: 145px;
+}
+
+#membership_info {
+    background-color: #333333;
+}
 
 /*------------------------ Page specific CSS End ------------------------*/
 
 /*------------------------ Media queries ------------------------*/
-@media screen and (max-width: 1800px) {
-    footer {
-        font-size: 24px;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    footer {
-        font-size: 16px;
-    }
-}
-
 @media screen and (max-width: 990px) {
     #desktop_header nav ul {
         gap: 60px;
@@ -193,12 +187,5 @@ footer {
     #mobile_header {
         display: block;
         margin: 0 10px;
-    }
-}
-
-@media screen and (max-width: 554px) {
-    footer {
-        flex-direction: column-reverse;
-        text-align: center;
     }
 }
