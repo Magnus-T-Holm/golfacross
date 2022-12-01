@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163.26 162.15">
+<svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163.26 162.16">
   <defs>
     <style>
       .cls-1 {
         fill: none;
-        stroke: #455b3f;
+        stroke: #e5e1e1;
         stroke-width: 3px;
       }
 
@@ -13,7 +13,7 @@
       }
 
       .cls-2 {
-        fill: #455b3f;
+        fill: #e5e1e1;
         stroke: #fff;
       }
     </style>

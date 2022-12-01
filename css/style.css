@@ -5,12 +5,17 @@
 }
 
 body {
-    background-color: #333333;
+    background-color: #1c1e27;
 }
 
 p,
-a {
+a,
+h1,
+h2,
+h3,
+i {
     color: #e5e1e1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*-------- Header --------*/
@@ -19,7 +24,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #333333;
+    background-color: #1c1e27;
 
 }
 
@@ -28,18 +33,13 @@ header {
     margin: 0 130px;
 }
 
-#desktop_header nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
 #desktop_header nav img {
     width: 90px;
 }
 
 #desktop_header nav ul {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
     gap: 50px;
@@ -47,21 +47,18 @@ header {
 }
 
 #desktop_header li a {
-    font-size: 38px;
-    font-family: Roboto, arial, sans-serif;
+    font-size: 24px;
 }
 
 #desktop_header li a:hover {
-    border-bottom: 3px solid #445b3e;
+    color: #445b3e;
+    border-bottom: 3px dotted #445b3e;
 }
+
 
 /*---- Mobile ----*/
 #mobile_header {
     display: none;
-}
-
-#mobile_header a {
-    color: black;
 }
 
 #mobile_header_top {
@@ -92,7 +89,7 @@ header {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: #333333;
+    background-color: #1c1e27;
     overflow-x: hidden;
     transition: 0.2s;
 }
@@ -117,34 +114,62 @@ header {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: black;
     display: block;
     transition: 0.2s;
 }
 
 .close_button {
     position: absolute;
-    top: 49px;
+    top: 33px;
     right: 13px;
     font-size: 35px;
-    color: black;
 }
 
 /* ---- Current page class | Add to the <li> in id "desktop_header" for the current page, to display a line under the menu button*/
 .current_page {
-    border-bottom: 3px solid #445b3e;
+    color: #445b3e;
+    border-bottom: 3px dotted #445b3e;
 }
+
+/*-------- Footer --------*/
+/*---- Desktop ----*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+footer i,
+footer div {
+    width: 136px;
+}
+
+
+footer p {
+    font-size: 16px;
+}
+
+footer i {
+    font-size: 40px;
+}
+
 
 /*------------------------ Universal CSS End ------------------------*/
 
 
 /*------------------------ Page specific CSS Start ------------------------*/
+/*-------- Index --------*/
 
+/*-------- Stats --------*/
+
+/*-------- Community --------*/
 
 /*-------- Info --------*/
 #user_info {
     background-color: #445b3e;
-    padding: 40px 0 52px 0;
+    padding: 40px 0 40px 0;
 }
 
 #info_section {
@@ -174,8 +199,12 @@ header {
     text-align: center;
 }
 
+#user_info_mobile {
+    display: none;
+}
+
 #info_section #user_icon {
-    font-size: 499px;
+    font-size: 300px;
     margin-bottom: 37px;
 }
 
@@ -186,9 +215,9 @@ header {
 
 #membership_info {
     height: 176px;
-    background-color: #333333;
+    background-color: rgb(55, 73, 51);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0 39px;
     font-size: 36px;
@@ -203,11 +232,50 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 133px 39px 150px;
-    background-color: #414141;
+    background-color: #1c1e27;
 }
 
 #membership_links>div {
     width: 604px;
+}
+
+#round_1 img {
+    margin-bottom: -4px;
+}
+
+#round_2 img {
+    margin-bottom: -3px;
+}
+
+#round_1,
+#round_2 {
+    position: relative;
+}
+
+#club_ranges:hover,
+#round_1:hover,
+#round_2:hover {
+    box-shadow: 10px 10px 10px #445b3e;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#round_1_text,
+#round_2_text {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 36px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#round_1:hover #round_1_text,
+#round_2:hover #round_2_text {
+    display: flex;
 }
 
 #club_ranges div {
@@ -217,6 +285,7 @@ header {
     flex-direction: column;
     height: 428px;
     padding: 30px 70px 0;
+    margin-top: -3px;
 }
 
 #club_ranges div p,
@@ -225,27 +294,54 @@ header {
     font-size: 24px;
 }
 
-#club_ranges div h3{
+#club_ranges div h3 {
     margin-bottom: 135px;
 }
 
-#idk {
+#rounds {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#idk img {
+#rounds img {
     width: 604px;
 }
 
 /*------------------------ Page specific CSS End ------------------------*/
 
 /*------------------------ Media queries ------------------------*/
+@media screen and (max-width: 1300px) {
+
+    #membership_links>div,
+    #membership_links img {
+        width: clamp(254px, 44vw, 604px);
+    }
+
+    #club_ranges div {
+        height: clamp(250px, 33vw, 428px);
+        padding: 30px clamp(30px, 5vw, 70px) 0;
+    }
+
+    #club_ranges div h3 {
+        margin-bottom: clamp(30px, 8vw, 135px);
+    }
+}
+
 @media screen and (max-width: 990px) {
+    #desktop_header {
+        margin: 0 80px;
+    }
+
     #desktop_header nav ul {
         gap: 60px;
     }
+
+
+    #info_section #user_icon {
+        font-size: clamp(160px, 40vw, 300px);
+    }
+
 }
 
 @media screen and (max-width: 930px) {
@@ -273,5 +369,89 @@ header {
     #mobile_header {
         display: block;
         margin: 0 10px;
+    }
+
+    #info_left,
+    #info_right {
+        display: none;
+    }
+
+    #info_center {
+        margin-bottom: 40px;
+    }
+
+    #user_info_mobile {
+        display: block;
+    }
+
+    #user_info_mobile ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0 0;
+        flex-wrap: wrap;
+    }
+
+    #user_info_mobile ul li p {
+        padding-bottom: 10px;
+    }
+
+    #membership_info,
+    #info_center p {
+        font-size: clamp(20px, 4vw, 36px);
+    }
+
+    #user_settings {
+        font-size: clamp(38px, 4vw, 66px);
+        margin-left: clamp(20px, 4vw, 40px);
+    }
+
+    #user_info {
+        padding: 40px 0 clamp(20px, 4vw, 40px);
+    }
+
+    #membership_links {
+        flex-direction: column;
+        align-items: center;
+        padding: clamp(60px, 14vw, 133px) 39px 150px;
+    }
+
+    #club_ranges,
+    #round_1,
+    #round_2 {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    #membership_info {
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 30px 39px;
+    }
+
+    #membership_club {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    #membership_id,
+    #membership_club {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 3px dotted #445b3e;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer div:not(:last-child) {
+        margin-bottom: 25px;
     }
 }

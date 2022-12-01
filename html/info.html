@@ -15,10 +15,10 @@
     <header>
         <div id="desktop_header">
             <nav>
-                <a href="index.html"><img src="../images/GOLFLOGO.svg" alt="Golfacross logo"></a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="stats.html">Stats</a></li>
+                    <a href="index.html"><img src="../images/GOLFLOGO.svg" alt="Golfacross logo"></a>
                     <li><a href="community.html">Community</a></li>
                     <li><a class="current_page" href="info.html">Info</a></li>
                 </ul>
@@ -26,8 +26,8 @@
         </div>
         <div id="mobile_header">
             <div id="mobile_header_top">
-                <a href="index.html">
-                </a> <i id="mobile_menu_button" class="fa-solid fa-bars" onclick="menu()"></i>
+                <a href="index.html"><img src="../images/GOLFLOGO.svg" alt="Golfacross logo"></a>
+                <i id="mobile_menu_button" class="fa-solid fa-bars" onclick="menu()"></i>
             </div>
             <div id="mobile_overlay">
                 <i class="fa-solid fa-x close_button" onclick="menu()"></i>
@@ -36,7 +36,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="stats.html">Stats</a></li>
                         <li><a href="community.html">Community</a></li>
-                        <li><a href="info.html">Info</a></li>
+                        <li><a class="current_page" href="info.html">Info</a></li>
                     </ul>
                 </nav>
             </div>
@@ -47,10 +47,25 @@
             <div id="info_section">
                 <div id="info_left">
                     <p>Hcp</p>
-                    <p>-48</p>
+                    <p>10</p>
                 </div>
                 <div id="info_center">
                     <i id="user_icon" class="fa-solid fa-circle-user"></i>
+                    <div id="user_info_mobile">
+                        <p>Hcp: 10</p>
+                        <ul>
+                            <li>
+                                <p>Stat</p>
+                            </li>
+                            <li>
+                                <p>Stat</p>
+                            </li>
+                            <li>
+                                <p>Stat</p>
+                            </li>
+
+                        </ul>
+                    </div>
                     <p>Miklas Drejsig Buhl</p>
                 </div>
                 <div id="info_right">
@@ -82,18 +97,42 @@
         </section>
         <section id="membership_links">
             <div id="club_ranges">
-                <img src="../images/clubs.jpg&text=_Golf+clubs_" alt="">
+                <img src="../images/golf_clubs.jpg" alt="">
                 <div>
                     <h3>Club Ranges</h3>
                     <p>Here you will be able to note and keep track of your individual performance based on clubs.</p>
                 </div>
             </div>
-            <div id="idk">
-                <img src="../images/Golf5.jpg" alt="">
-                <img src="../images/Golf8.jpg" alt="">
+            <div id="rounds">
+                <div id="round_1">
+                    <img src="../images/Golf3.jpg" alt="">
+                    <div id="round_1_text">
+                        <p>Rounds</p>
+                    </div>
+                </div>
+                <div id="round_2">
+                    <img src="../images/golf_course.jpg" alt="">
+                    <div id="round_2_text">
+                        <p>Rounds 2</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <p>@golfacross</p>
+        </div>
+        <div>
+            <i class="fa-brands fa-instagram"></i>
+            <p>@golfacross</p>
+        </div>
+        <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>info@golfacross.com</p>
+        </div>
+    </footer>
 </body>
 
 </html>
