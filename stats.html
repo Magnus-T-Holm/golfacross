@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2ca87244a7.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="desktop_header">
+            <nav>
+
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a class="current_page" href="/stats">Stats</a></li>
+                    <a href="/"><img src="images/GOLFLOGO.svg" alt="Golfacross logo"></a>
+                    <li><a href="/community">Community</a></li>
+                    <li><a href="/info">Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="mobile_header">
+            <div id="mobile_header_top">
+                <a href="/"><img src="images/GOLFLOGO.svg" alt="Golfacross logo"></a>
+                <i id="mobile_menu_button" class="fa-solid fa-bars" onclick="menu()"></i>
+            </div>
+            <div id="mobile_overlay">
+                <i class="fa-solid fa-x close_button" onclick="menu()"></i>
+                <nav id="overlay_content">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a class="current_page" href="/stats">Stats</a></li>
+                        <li><a href="/community">Community</a></li>
+                        <li><a href="/info">Info</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="crownrow">
+            <div class="column">
+                <img class="bronzecrown" src="images/BRONZE.svg" alt="bronze">
+            </div>
+            <div class="column">
+                <img class="goldcrown" src="images/Guld.svg" alt="gold">
+            </div>
+            <div class="column">
+                <img class="silvercrown" src="images/SØLV.svg" alt="silver">
+            </div>
+        </section>
+
+        <section class="crownnames">
+            <h3>#3 Charlie Andersen </h3>
+            <h2>#1 Oskar Harper</h2>
+            <h3>#2 Aamir Chavez</h3>
+        </section>
+
+        <div class="tabsmenu">
+            <ul>
+                <li><a class="active" href="#">Alle</a></li>
+                <li><a href="#">Klub</a></li>
+                <li><a href="#">Venner</a></li>
+            </ul>
+        </div>
+
+        <div class="listen">
+            <ul>
+                <li>
+                    <span class="Number">1</span>
+                    <span class="Name">Oskar Harper</span>
+                    <span class="Points">-1</span>
+                    <span class="handicap">HCP</span>
+                </li>
+                <li>
+                    <span class="Number">2</span>
+                    <span class="Name">Aamir Chavez</span>
+                    <span class="Points">2.3</span>
+                    <span class="handicap">HCP</span>
+                </li>
+                <li>
+                    <span class="Number">3</span>
+                    <span class="Name">Charlie Andersen</span>
+                    <span class="Points">3.5</span>
+                    <span class="handicap">HCP</span>
+                </li>
+                <li>
+                    <span class="Number">4</span>
+                    <span class="Name">Christian Rosario</span>
+                    <span class="Points">3.8</span>
+                    <span class="handicap">HCP</span>
+                </li>
+                <li>
+                    <span class="Number">5</span>
+                    <span class="Name">Felix Cruz</span>
+                    <span class="Points">5.1</span>
+                    <span class="handicap">HCP</span>
+                </li>
+                <li>
+                    <span class="Number">6</span>
+                    <span class="Name">Aron Solomon</span>
+                    <span class="Points">6.2</span>
+                    <span class="handicap">HCP</span>
+                </li>
+                <li>
+                    <span class="Number">7</span>
+                    <span class="Name">Kurtis Monroe</span>
+                    <span class="Points">8.3</span>
+                    <span class="handicap">HCP</span>
+                </li>
+                <li>
+                    <span class="Number">8</span>
+                    <span class="Name">Caleb O'Moore</span>
+                    <span class="Points">9.5</span>
+                    <span class="handicap">HCP</span>
+                </li>
+                <li>
+                    <span class="Number">9</span>
+                    <span class="Name">Katelyn Jackson</span>
+                    <span class="Points">10.8</span>
+                    <span class="handicap">HCP</span>
+                </li>
+                <li>
+                    <span class="Number">10</span>
+                    <span class="Name">Sahar Bennett</span>
+                    <span class="Points">11</span>
+                    <span class="handicap">HCP</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <p>@golfacross</p>
+        </div>
+        <div>
+            <i class="fa-brands fa-instagram"></i>
+            <p>@golfacross</p>
+        </div>
+        <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>info@golfacross.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>

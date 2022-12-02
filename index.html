@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontpage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2ca87244a7.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="desktop_header">
+            <nav>
+
+                <ul>
+                    <li><a class="current_page" href="/">Home</a></li>
+                    <li><a href="/stats">Stats</a></li>
+                    <a href="/"><img src="images/GOLFLOGO.svg" alt="Golfacross logo"></a>
+                    <li><a href="/community">Community</a></li>
+                    <li><a href="/info">Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="mobile_header">
+            <div id="mobile_header_top">
+                <a href="/"><img src="images/GOLFLOGO.svg" alt="Golfacross logo"></a>
+                <i id="mobile_menu_button" class="fa-solid fa-bars" onclick="menu()"></i>
+            </div>
+            <div id="mobile_overlay">
+                <i class="fa-solid fa-x close_button" onclick="menu()"></i>
+                <nav id="overlay_content">
+                    <ul>
+                        <li><a class="current_page" href="/">Home</a></li>
+                        <li><a href="/stats">Stats</a></li>
+                        <li><a href="/community">Community</a></li>
+                        <li><a href="/info">Info</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="top-section">
+            <img src="images/Golf1.jpg" alt="Top billede">
+        </section>
+        <section class="mid-section">
+            <h4>GolfAcross gives you unprecidented options to manage the club within the club.</h4>
+        </section>
+        <section class="midone-section">
+            <img src="images/telefonpng.png" alt="Telefon med info">
+        </section>
+        <section class="bot-section">
+            <p>To gain the most from our platform - Download the app on your mobile device, and let us be the caddy you
+                deserve.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <p>@golfacross</p>
+        </div>
+        <div>
+            <i class="fa-brands fa-instagram"></i>
+            <p>@golfacross</p>
+        </div>
+        <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>info@golfacross.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>

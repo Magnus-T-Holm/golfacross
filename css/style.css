@@ -161,8 +161,181 @@ footer i {
 
 /*------------------------ Page specific CSS Start ------------------------*/
 /*-------- Index --------*/
+.top-section {
+    text-align: center;
+    color: #e5e1e1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.top-section img {
+    width: 82%;
+    padding: 20px 20px 20px;
+}
+
+.mid-section {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: #e5e1e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mid-section h4 {
+    font-size: 40px;
+}
+
+.midone-section {
+    display: flex;
+    justify-content: center;
+}
+
+.midone-section img {
+    width: 70%;
+    height: 60%;
+}
+
+.bot-section {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #e5e1e1;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bot-section p {
+    font-size: 36px;
+}
 
 /*-------- Stats --------*/
+.crownrow {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.column {
+    width: 15%;
+}
+
+.bronzecrown:hover {
+    transform: scale(1.06);
+    transition: .5s;
+}
+
+.goldcrown:hover {
+    transform: scale(1.06);
+    transition: .5s;
+}
+
+.silvercrown:hover {
+    transform: scale(1.06);
+    transition: .5s;
+}
+
+.crownnames {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding-bottom: 50px;
+    font-size: 1.5vw;
+}
+
+.tabsmenu {
+    background: #7DA168;
+    text-align: center;
+    height: 90px;
+}
+
+.tabsmenu ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.tabsmenu ul li {
+    font-size: 3vw;
+    width: 80%;
+    margin: 15px;
+    padding: 15px;
+}
+
+.tabsmenu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.tabsmenu ul li a:hover {
+    display: inline-block;
+    border-bottom: 3px solid #445b3e;
+    ;
+}
+
+.listen ul {
+    position: relative;
+    width: 80vw;
+    margin: 50px auto 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, rgba(255, 255, 255, .1));
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+
+.listen ul li {
+    display: flex;
+    background: rgba(255, 255, 255, .1);
+    padding: 10px 20px;
+    color: white;
+    margin: 5px 0;
+    transition: .5s;
+}
+
+.listen ul li:nth-child(1) {
+    background: rgba(255, 255, 255, .6);
+}
+
+.listen ul li:nth-child(2) {
+    background: rgba(255, 255, 255, .4);
+}
+
+.listen ul li:nth-child(3) {
+    background: rgba(255, 255, 255, .2);
+}
+
+.listen ul li span:nth-child(1) {
+    width: 60px;
+}
+
+.listen ul li span:nth-child(2) {
+    width: 500px;
+}
+
+.listen ul li span:nth-child(3) {
+    width: 300px;
+    text-align: right;
+}
+
+.listen ul li span:nth-child(4) {
+    width: 70px;
+    text-align: right;
+}
+
+.listen ul li:hover {
+    transform: scale(1.06);
+    background: white;
+    color: black;
+}
 
 /*-------- Community --------*/
 
@@ -369,6 +542,14 @@ footer i {
     #mobile_header {
         display: block;
         margin: 0 10px;
+    }
+
+    .mid-section h4 {
+        font-size: clamp(16px, 5vw, 40px);
+    }
+
+    .bot-section p {
+        font-size: clamp(12px, 5vw, 36px);
     }
 
     #info_left,
