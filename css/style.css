@@ -338,6 +338,47 @@ footer i {
 }
 
 /*-------- Community --------*/
+.container {
+    display: flex;
+    align-items: center;
+    column-gap: 88px;
+    justify-content: center;
+    padding: 50px 30px 100px 30px;
+}
+
+.container img {
+    width: 500px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #0f1017;
+    height: 266.66px;
+    width: 500px;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.image :hover {
+    box-shadow: 10px 10px 10px #445b3e;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.text h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #e5e1e1;
+}
+
+.bla {
+    display: flex;
+    flex-direction: column;
+}
 
 /*-------- Info --------*/
 #user_info {
