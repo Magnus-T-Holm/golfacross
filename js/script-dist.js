@@ -1,0 +1,1 @@
+function menu(){var e=document.querySelector("#mobile_overlay"),t=document.querySelector("body");"100%"==e.style.width?(e.style.width="0",t.style.overflow="visible"):(e.style.width="100%",t.style.overflow="hidden")}
